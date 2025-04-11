@@ -1,0 +1,34 @@
+package org.example.gotalearn.ds;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+import java.util.Base64;
+
+@Getter
+@Setter
+@NoArgsConstructor
+public class CourseInfoDto {
+    private long courseId;
+    private String title;
+    private String description;
+    private BigDecimal fees;
+    private String category;
+    private String imageBase64;
+    private String instructorName;
+
+    public CourseInfoDto(long courseId, String title, String description, BigDecimal fees, String category, byte[] imageBase64, String instructorName) {
+        this.courseId = courseId;
+        this.title = title;
+        this.description = description;
+        this.fees = fees;
+        this.category = category;
+
+        //convert to base64 encoded string
+        this.imageBase64 = imageBase64 !=null ? Base64.getEncoder()
+                .encodeToString(imageBase64) : null;
+        this.instructorName = instructorName;
+    }
+}
