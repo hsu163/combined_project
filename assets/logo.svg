@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280" height="50" viewBox="0 0 272 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Text element with math-style bold font -->
+  <text x="2" y="36" fill="black"
+        font-family="'STIX Two Math', 'Cambria Math', 'Latin Modern Math', sans-serif"
+        font-size="30" font-weight="bold">
+    Horizon’s Embrace
+  </text>
+  
+  <!-- Group for the clover leaf; adjust the transform for proper spacing relative to the text -->
+  
+</svg>

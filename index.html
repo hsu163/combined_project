@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Horizon’s Embrace </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+
+<body>
+
+    <video autoplay muted loop class="video-background">
+        <source src="./assets/h3.mp4" type="video/mp4">
+    </video>
+
+    
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="./last.svg" alt="logo" width="222" height="30" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#faq-350" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <a href="#services-296" class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </a>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Therapy & Counselling</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Guided Meditations</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#blog-986" class="cs-li-link">
+                           Blog
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#cs-footer-269" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cs-contact-group">
+            <a href="tel:+84 1985 33 999" class="cs-phone">
+                <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                +84 1985 33 999
+            </a>
+            <div class="cs-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/youtube1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+<!-- start customize banner  -->
+ <div class="banners">
+    <p class=" bannerheaders">Peace is already within you.<span> EMBRACE THE HORIZON </span> of the present moment ,</p>
+    <p class="lead bannerparagraphs">and you will find it ___ where healing, clarity and freedom begin </p>
+    
+ </div>
+ <div class="aboutus">
+    <p class="aboutuss">"Find clarity. Find balance. Find yourself. Explore our mindfulness resources and begin your healing journey today"</p>
+ </div>
+ 
+<!-- end customize banner  -->
+
+
+
+
+
+<!-- start about section  -->
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-350" class="about">
+    <div class="cs-container">
+        <div class="cs-left">
+            <!--Big Image-->
+            <picture class="cs-picture cs-picture1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="./assets/img1.webp">
+                <source media="(min-width: 601px)" srcset="./assets/img1.webp">
+                <img loading="lazy" decoding="async" src="./assets/img1.webp" alt="cleaning supplies" width="672" height="672">
+            </picture>
+            <!--Medium Image-->
+            <picture class="cs-picture cs-picture2" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="./assets/img2.webp">
+                <source media="(min-width: 601px)" srcset="./assets/img2.webp">
+                <img loading="lazy" decoding="async" src="./assets/img2.webp" alt="cleaning supplies" width="300" height="300">
+            </picture>
+            <!--Small Image-->
+            <picture class="cs-picture cs-picture3" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="./assets/img3.webp">
+                <source media="(min-width: 601px)" srcset="./assets/img3.webp">
+                <img loading="lazy" decoding="async" src="./assets/img3.webp" alt="cleaner" width="200" height="200">
+            </picture>
+        </div>
+        <div class="cs-content">
+
+            <h2 class="cs-title">About Horizon’s Embrace</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Who are we?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We are Horizon’s Embrace, a sanctuary dedicated to mindfulness, healing, and personal growth. Our mission is to help individuals find inner peace through therapy, guided meditations, and self-reflection.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is our purpose?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Our purpose is to create a space where people can pause, breathe, and reconnect with themselves. We aim to provide support and resources that empower individuals to navigate life’s challenges with clarity and resilience.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What do we offer?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We offer a variety of mindfulness-based resources, including:
+
+                        Therapy & Counseling: Professional support for emotional well-being.
+                        Guided Meditations: Tools to cultivate mindfulness and reduce stress.
+                        Blogs & Insights: Articles on self-care, healing, and mental clarity.
+                    </p>
+                </li>
+                
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Why is mindfulness important?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Mindfulness helps us stay present, manage stress, and cultivate inner peace. It allows us to embrace life’s moments fully and respond to challenges with a calm and balanced mind.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How can you start your journey with us?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Your journey begins with a single step. Explore our resources, try a guided meditation, or reach out for support. Let Horizon’s Embrace be your companion on the path to self-discovery and healing.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+                                
+<!-- end about section  -->
+
+<!-- start service section  -->
+
+<section id="services-296">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">___________Our Services_____________</span>
+            <h2 class="cs-title">Guiding You Towards Inner Peace & Well-being</h2>
+            <p class="cs-text">
+                At Horizon’s Embrace, we provide a sanctuary for healing, self-discovery, and personal growth. Our holistic approach integrates mindfulness, therapy, and breathwork to help you navigate life’s challenges with clarity and resilience. Whether you seek emotional support, inner stillness, or mindful living, we are here to guide you on your journey toward peace.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="#">
+                    <img class="cs-icon" src="./assets/bird1.png" alt="icon">
+                    <h3 class="cs-h3">Therapy & Counseling</h3>
+                    <p class="cs-item-text">
+                        Sometimes, life can feel overwhelming. Our professional therapy and counseling sessions offer a safe space where you can openly express your emotions, explore your struggles, and receive compassionate guidance. We focus on mental clarity, emotional healing, and personal empowerment, helping you regain control over your thoughts and feelings. 
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="./assets/b1.jpg">
+                    <source media="(min-width: 601px)" srcset="./assets/b1.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b1.jpg" alt="library" width="413" height="266">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="#">
+                    <img class="cs-icon" src="./assets/bird1.png" alt="icon">
+                    <h3 class="cs-h3">Guided Meditations</h3>
+                    <p class="cs-item-text">
+                        Meditation is a powerful tool for achieving inner peace and reducing stress. Our guided meditation sessions are designed to help you cultivate mindfulness, release tension, and reconnect with your true self. Whether you are a beginner or experienced in meditation, our sessions will support you in finding balance and serenity in your daily life.
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="./assets/b4.jpg">
+                    <source media="(min-width: 601px)" srcset="./assets/b4.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b4.jpg" alt="library" width="413" height="266">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="#">
+                    <img class="cs-icon" src="./assets/bird1.png" alt="icon">
+                    <h3 class="cs-h3">Breathing Techniques</h3>
+                    <p class="cs-item-text">
+                        The way we breathe affects our emotions, energy, and overall well-being. Through guided breathwork techniques, we teach you how to harness the power of your breath to calm your nervous system, enhance focus, and improve emotional resilience. These exercises are perfect for reducing anxiety, improving sleep, and promoting a sense of groundedness.
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="./assets/b2.jpg">
+                    <source media="(min-width: 601px)" srcset="./assets/b2.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b2.jpg" alt="library" width="413" height="266">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="#">
+                    <img class="cs-icon" src="./assets/bird1.png" alt="icon">
+                    <h3 class="cs-h3">Mindfulness Coaching</h3>
+                    <p class="cs-item-text">
+                        Mindfulness is more than a practice; it’s a way of living. Our mindfulness coaching sessions provide personalized strategies to help you stay present, manage stress, and cultivate a deep sense of awareness in your daily life. Learn how to let go of distractions, embrace the present moment, and build a life filled with intention and peace.
+                    </p>
+                </a>
+                <picture class="cs-image"  aria-hidden="true">
+                    <source media="(max-width: 600px)" srcset="./assets/b3.jpg">
+                    <source media="(min-width: 601px)" srcset="./assets/b3.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b3.jpg" alt="library" width="413" height="266">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- end service section  -->
+
+
+<!-- start blog section  -->
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="blog-986">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">BLOGS</span>
+                <h2 class="cs-title">Directly from The Professional Therapists </h2>
+            </div>
+            <a href="" class="cs-button-solid">View All</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="./assets/b6.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="./assets/b6.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b6.jpg" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-date">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/calendar.svg" alt="stylist" width="20" height="20">
+                        07 Feb, 2025
+                    </span>
+                    <h3 class="cs-h3">The Power of Mindfulness: How to Find Peace in Everyday Life</h3>
+                    <span class="cs-desc">
+                        Learn how simple mindfulness techniques can help you reduce stress, improve focus, and bring a sense of calm into your daily routine. Discover......
+                    </span>
+                    <a href="" class="cs-link">Read More</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="./assets/b5.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="./assets/b5.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b5.jpg" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-date">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/calendar.svg" alt="stylist" width="20" height="20">
+                        15 Jan, 2025
+                    </span>
+                    <h3 class="cs-h3">Healing Through Therapy: Why Talking Can Change Your Life</h3>
+                    <span class="cs-desc">
+                        Therapy isn't just for those in crisis—it’s a tool for self-discovery and emotional well-being. Explore how therapy.....
+                    </span>
+                    <a href="" class="cs-link">Read More</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="./assets/b3.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="./assets/b3.jpg">
+                    <img loading="lazy" decoding="async" src="./assets/b3.jpg" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-date">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/calendar.svg" alt="stylist" width="20" height="20">
+                        22 Dec, 2024
+                    </span>
+                    <h3 class="cs-h3">Guided Meditation vs. Breathing Techniques: Which One Is Right for You?</h3>
+                    <span class="cs-desc">
+                        Meditation and breathing exercises both promote relaxation, but which one suits your needs? This article breaks down the benefits of............... 
+                    </span>
+                    <a href="" class="cs-link">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<!-- end blog section  -->
+
+<!-- start contact section  -->
+
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-269">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img light" aria-hidden="true" loading="lazy" decoding="async" src="./assets/logo.svg" alt="logo" width="240" height="32">
+            </a>
+            <p class="cs-text">
+                Horizon’s Embrace provides therapy, mindfulness, and guided meditations to support your healing journey. Embrace the present moment with peace
+            </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Sitemap</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Home</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#faq-350">About</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#services-296">Services</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#blog-986">Blog</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="#cs-footer-269">Contact</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-contact">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="mailto:embrace@horizon.com">embrace@horizon.com</a>
+            </li>
+            <!-- Social Media -->
+            <li class="cs-contact-li cs-social-group">
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>
+                                
+ <!-- end contact section  -->
+                                
+    
+<script src="./app.js"></script>
+</body>
+</html>
