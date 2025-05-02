@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+:root{
+	--primary-color:darkviolet;
+	--secondary-color:darkblue;
+	--primary-grad-color:linear-gradient(darkviolet,skyblue);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif ;
+
+	padding: 0;
+	margin: 0;
+}
+
+/*Start Header Section*/
+
+/*Start Header Intro*/
+.headerintros{
+	background-color: var(--primary-color);
+	color: #fff;
+	padding: 15px 0;
+
+	display: none;
+}
+
+@media (min-width:1200px){
+	.visiblelgs{
+		display: block;
+	}
+}
+
+.infos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: 14px;
+	font-weight: bold;
+}
+
+header{
+	height: 80vh;
+	background: var(--primary-grad-color);
+
+	position: relative;
+}
+
+.headericons a{
+	color: #fff;
+	margin: 0 10px;
+}
+/*End Header Intro*/
+
+
+/*Start Nav Bar*/
+
+nav{
+
+}
+
+.menustyles li a{
+	color: #000;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+
+	transition: color .5s;
+}
+
+.menustyles li a:hover{
+	color: var(--primary-color);
+
+}
+
+.navbuttons{
+	border: none;
+}
+
+.navbuttons:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.lines1,.lines2,.lines3{
+	width: 17px;
+	height: 2px;
+	margin: 3px;
+}
+
+.crossxs .lines1{
+	transform: rotate(-45deg) translate(-3px,4px);
+}
+
+.crossxs .lines2{
+	opacity: 0;
+}
+
+.crossxs .lines3{
+	transform: rotate(45deg) translate(-3px,-4px);
+}
+
+/*End Nav Bar*/
+
+
+/*Start Banner*/
+
+.banners{
+	width: 90%;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	transform: translate(-50%,-50%);
+}
+
+.bannerheaders{
+	font-weight: bold;
+	letter-spacing: 3px;
+
+	animation-name: bnanis;
+	animation-duration: 2s;
+}
+
+.bannerparagraphs,.banner-btn{
+	animation-name: bnanis;
+	animation-duration: 2s;
+	animation-delay: .5s;
+
+	animation-fill-mode: backwards;
+}
+
+@keyframes bnanis{
+	from{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+
+	to{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+/*End Banner*/
+
+.studentgroups{
+	width: 50%;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	z-index: 1;
+}
+
+.waves{
+	width: 100%;
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	z-index: 2;
+}
+
+
+/*End Header Section*/
+
+
+/*Start Students Counter Section*/
+.counters{
+	width: 100%;
+	height: 20vh;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.counteritems{
+	width: 25%;
+	text-align: center;
+	float: left;
+	border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.counteritems:last-child{
+	border-right: none;
+}
+
+.counteritems .fas{
+	background: var(--primary-grad-color);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+.counteritems h5{
+	font-size: 15px;
+	font-weight: bold;
+}
+/*End Students Counter Section*/
+
+
+/*Start About Us Section*/
+.aboutuss{
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.3)
+		),url('./../assets/img/banner/banner4.jpg');
+	background-repeat: no-repeat;
+}
+
+.aboutuss ul li{
+	list-style-type: none;
+	background-color: var(--secondary-color);
+	margin: 20px 0;
+}
+/*End About Us Section*/
+
+/*Start Faculty Section*/
+.faculties{
+	background-color: var(--secondary-color);
+}
+
+.flip-cards{
+	width: 300px;
+	height: 300px;
+}
+
+.flip-card-inners{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+	transform: rotateY(-45deg) scale(0.7);
+
+	transform-style: preserve-3d;
+
+	transition: transform .5s;
+}
+
+.flip-cards:hover .flip-card-inners{
+	transform: rotateY(180deg);
+}
+
+.flip-card-fronts,.flip-card-backs{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+
+	-webkit-backface-visibility:hidden;
+	backface-visibility: hidden;
+}
+
+.flip-card-backs{
+	background-color: steelblue;
+	transform: rotateY(180deg);
+}
+
+.socialicons a{
+	color: #fff;
+	border: 1px solid #f4f4f4;
+	padding: 5px;
+	margin: 0 5px;
+}
+
+.socialicons a:hover{
+	background-color: blue;
+}
+/*End Faculty Section*/
+
+/*Start Pricing Section*/
+.pricingboxes{
+	background-color: #eee;
+	text-align: center;
+
+	transition: transform .5s ease;
+}
+
+.pricingboxes:hover{
+	transform: translateY(-20px);
+}
+
+.price-headers{
+	background-color: darkblue;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.prices{
+	font-size: 3rem;
+	color: #777;
+	font-weight: bold;
+	line-height: 160px;
+
+	/*background-image: url('./../assets/img/icon/pricebg.png') center center no-repeat;*/
+
+	background-image: url('./../assets/img/icon/pricebg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.price-items li{
+	margin: 10px 0;
+}
+/*End Pricing Section*/
+
+/*Start Location*/
+.locationcards{
+	position: relative;
+}
+
+.locationcontents{
+	width: 0;
+	height: 100%;
+	background-color: #444;
+	color: #fff;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	transform: rotateY(-90deg);
+	transform-origin: left center; 
+
+	transition: all .2s; 
+}
+
+.locationcards:hover .locationcontents{
+	width: 70%;
+	transform: rotateY(0deg);
+}
+
+.btn-infos{
+	width: 50%;
+	background-color: steelblue;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.btn-infos:hover{
+	background-color: royalblue;
+	color: #fff;
+}
+/*End Location*/
+
+/*Start Features Section*/
+.features{
+	background-color: var(--secondary-color);
+}
+
+.feas img{
+	transform: rotateY(0) scale(0.5);
+	transition: transform .5s;
+}
+
+.feas:hover img{
+	transform: rotateY(1turn) scale(1);
+}
+
+.feas p{
+	font-size: 12px;
+}
+/*End Features Section*/
+
+
+/*Start Student Graduate Section*/
+.headings{
+	font-size: 25px;
+	margin-right: 25px;
+}
+
+.fa.fa-star{
+	font-size: 25px;
+}
+
+.fills{
+	color: orange;
+}
+
+.rows{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.lefts{
+	width: 20%;
+}
+
+.middles{
+	width: 60%;
+}
+
+.rights{
+	width: 20%;
+	margin-top: 10px;
+}
+
+.bars-container{
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.bars-1{
+	width: 60%;
+	height: 18px;
+	background-color: green;
+}
+
+.bars-2{
+	width: 30%;
+	height: 18px;
+	background-color: steelblue;
+}
+
+.bars-3{
+	width: 10%;
+	height: 18px;
+	background-color: skyblue;
+}
+
+.bars-4{
+	width: 4%;
+	height: 18px;
+	background-color: orange;
+}
+
+.bars-5{
+	width: 15%;
+	height: 18px;
+	background-color: red;
+}
+/*End Student Graduate Section*/
+
+/*Start Subscribe Section*/
+.subscripts{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url('./../assets/img/etc/student1');
+	background-repeat: no-repeat;
+	background-position: 80%;
+	padding: 10px 20px;
+}
+
+.input-group-text{
+	background-color: royalblue;
+	color: #fff;
+}
+
+.squareareas{
+	position: relative;
+
+	overflow: hidden;
+}
+
+.sqboxes{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	left: 0;
+	bottom: -10%;
+}
+
+.square{
+	background-color: #f2f2f2;
+
+	position: absolute;
+	bottom: -100px;
+
+	animation: sqani 3s infinite ease-in-out;
+}
+
+.square:nth-child(1){
+	width: 70px;
+	height: 70px;
+	left: 7%;
+}
+
+.square:nth-child(2){
+	width: 65px;
+	height: 65px;
+	left: 15%;
+
+	animation-delay: 8s;
+}
+
+.square:nth-child(3){
+	width: 82px;
+	height: 82px;
+	left: 45%;
+
+	animation-delay: 4s;
+}
+
+.square:nth-child(4){
+	width: 70px;
+	height: 70px;
+	left: 55%;
+
+	animation-delay: 2s;
+}
+
+.square:nth-child(5){
+	width: 60px;
+	height: 60px;
+	left: 27%;
+
+	animation-delay: 6s;
+}
+
+.square:nth-child(6){
+	width: 70px;
+	height: 70px;
+	left: 85%;
+
+	animation-delay: 4s;
+}
+
+.square:nth-child(7){
+	width: 90px;
+	height: 90px;
+	left: 75%;
+
+	animation-delay: 9s;
+}
+
+.square:nth-child(8){
+	width: 55px;
+	height: 55px;
+	left: 67%;
+
+	animation-delay: 4s;
+}
+
+.square:nth-child(9){
+	width: 45px;
+	height: 45px;
+	left: 10%;
+
+	animation-delay: 7s;
+}
+
+.square:nth-child(10){
+	width: 55px;
+	height: 55px;
+	left: 60%;
+}
+
+@keyframes sqani{
+	0%{
+		bottom: -100px;
+	}
+
+	100%{
+		bottom: 100px;
+		transform: rotate(180deg);
+		opacity: 0;
+	}
+}
+/*End Subscribe Section*/
+
+/*Start Footer Section*/
+.footerlinks{
+	color: #eee;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.footerlinks:hover{
+	color: orange;
+	border-bottom: 1px solid orange;
+	letter-spacing: 1px;
+}
+
+.footersocialicons a{
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid #f4f4f4;
+	margin: 0 2px;
+}
+
+.footersocialicons a:hover{
+	background-color: blue;
+}
+
+.instagrams ul li a img{
+	opacity: 0.9;
+	transform: scale(0.9);
+}
+
+.instagrams ul li a img:hover{
+	opacity: 0.5;
+	transform: scale(1);
+}
+
+.backtotop-btn{
+	background-color: #303030;
+	padding: 10px;
+}
+
+.backtotop-btn:hover{
+	background-color: #404040;
+}
+/*End Footer Section*/
+
+/*Start Login & Sticknote*/
+
+/*start login*/
+.openform{
+	width: 30px;
+	height: 30px;
+	background-color: #555;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+
+	opacity: 0.8;
+
+	z-index: 10;
+}
+
+.open-bottom:hover{
+	opacity: 1;
+}
+
+.form-popup{
+	position: fixed;
+	right: 15px;
+	bottom: 50px;
+
+	border: 3px solid #f1f1f1;
+	z-index: 100;
+
+	display: none;
+}
+
+.form-containers{
+	max-width: 300px;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.form-containers input[type=email],.form-containers input[type=password]{
+	width: 100%;
+	background-color: #f1f1f1;
+	border: none;
+
+	padding: 15px;
+	margin: 5px 0 22px 0;
+}
+
+.form-containers input[type=email],.form-containers input[type=password]:focus{
+	background-color: #ddd;
+	outline: none;
+}
+/*end login*/
+
+/*start sticknote*/
+#mysidenav a{
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	padding: 15px;
+	border-radius: 0 5px 5px 0;
+
+	position: absolute;
+	left: -80px;
+
+	z-index: 100;
+
+	transition: left .3s;
+}
+
+#about{
+	background-color: green;
+	top: 200px;
+}
+
+#pages{
+	background-color: skyblue;
+	top: 260px;
+}
+
+#news{
+	background-color: tomato;
+	top: 320px;
+}
+
+#contact{
+	background-color: grey;
+	top: 380px;
+}
+
+#mysidenav a:hover{
+	left: 0;
+}
+/*end sticknote*/
+
+/*End Login & Sticknote*/
+
+/*14SQ*/
+
+/*22FN*/
