@@ -1,0 +1,23 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{BASE_ENDPOINT}}/accounts/4
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "KPay",
+    "amount": 245000,
+    "iconId": null
+  }
+}

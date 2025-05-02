@@ -1,0 +1,23 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_ENDPOINT}}/user/currencies
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Myanmar Kyat",
+    "code": "MMK",
+    "iconId": 2
+  }
+}
